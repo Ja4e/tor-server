@@ -13,21 +13,7 @@ we load it under systemctl instead
 
 save it as /etc/systemd/system/tor-snowflake.service
 
-edit this:
-
-[Unit]
-Description=Tor Snowflake Server
-After=network.target
-
-[Service]
-Type=simple
-User=jake
-WorkingDirectory=/home/<user>/snowflake/server
-ExecStart=/usr/bin/tor -f /home/<user>/snowflake/server/torrc
-Restart=on-failure
-
-[Install]
-WantedBy=multi-user.target
+copy paste the tor-snowflake service.conf from this repo
 
 sudo systemctl enable --now tor-snowflake.service/etc/systemd/system/tor-snowflake.service
 
