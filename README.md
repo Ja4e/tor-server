@@ -1,5 +1,5 @@
 # tor-server
-hosting tor server
+hosting tor servers
 
 make sure you have installed tor
 
@@ -13,7 +13,11 @@ we load it under systemctl instead
 
 save it as /etc/systemd/system/tor-snowflake.service
 
-copy paste the tor-snowflake service.conf from this repo
+# copy paste the tor-snowflake service.conf from this repo
+this conf serves snowbridging with tor services only
+
+# copy paste the tor-snowflake-proxy service.conf from this repo
+this conf serves to load in proxy bridges 
 
 sudo systemctl enable --now tor-snowflake.service/etc/systemd/system/tor-snowflake.service
 
