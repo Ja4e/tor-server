@@ -16,6 +16,10 @@ save it as /etc/systemd/system/tor-snowflake.service
 # copy paste the tor-snowflake service.conf from this repo
 this conf serves snowbridging with tor services only
 
+for proxy standalone:
+cd snowflake/proxy
+go build
+and then
 # copy paste the tor-snowflake-proxy service.conf from this repo
 this conf serves to load in proxy bridges no tor required for this but remember to copy the directory and specifiy where it located same applies to all conf
 
