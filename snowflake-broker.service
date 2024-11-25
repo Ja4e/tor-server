@@ -1,0 +1,14 @@
+[Unit]
+Description=Snowflake Broker
+#After=tor-snowflake.service
+#Requires=tor-snowflake.service
+
+[Service]
+Type=simple
+User=jake
+WorkingDirectory=/home/<user>/snowflake/broker
+ExecStart=/home/<user>/snowflake/broker/broker --acme-hostnames example.snowflake -metrics-log /home/<user/>Downloads/fun.txt
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
