@@ -1,4 +1,5 @@
 # tor-server
+
 hosting tor servers
 
 make sure you have installed tor
@@ -22,6 +23,8 @@ go build
 and then
 # copy paste the tor-snowflake-proxy service.conf from this repo
 this conf serves to load in proxy bridges no tor required for this but remember to copy the directory and specifiy where it located same applies to all conf
+
+TO make this proxy more effective you might want to port forward 80, 443 and 9001 You willl be expected to to be connected with at least 30 client per hour... Highly dependent to your network bandwidth.
 
 if tehres any update
 do:
