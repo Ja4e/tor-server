@@ -1,0 +1,10 @@
+# this is the file that something you wanted, make sure thr ORPort does not correlate with the broker... dont forget to change host name and email
+SocksPort 0
+ORPort 9001
+ExtORPort auto
+BridgeRelay 1
+AssumeReachable 1
+
+ServerTransportListenAddr snowflake 0.0.0.0:443
+ServerTransportPlugin snowflake exec ./server --aceme-hostnames <hostname> --acme-email <email> --log /var/log/tor/snowflake-server.log
+ServerTransportOptions snowflake num-turbotunnel=10 metrics=true
