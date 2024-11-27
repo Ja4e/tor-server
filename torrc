@@ -1,4 +1,4 @@
-# this is the file that something you wanted, make sure thr ORPort does not correlate with the broker... dont forget to change host name and email
+# this is the file that something you wanted, make sure thr ORPort does not correlate with the broker... dont forget to change host name and email change this only under server torrc
 SocksPort 0
 ORPort 9001
 ExtORPort auto
