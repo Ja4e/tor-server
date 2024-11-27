@@ -8,6 +8,7 @@ Type=simple
 User=jake
 WorkingDirectory=/home/<user>/snowflake/broker
 ExecStart=/home/<user>/snowflake/broker/broker --acme-hostnames example.snowflake -metrics-log /home/<user/>Downloads/fun.txt
+# for these type of stuff --aceme-hostnames are required to be setupd duckdns works? subdomains are generally more recommended... i would suggest setting up crontab services to update ip if using dhcp
 Restart=on-failure
 
 [Install]
